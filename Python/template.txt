@@ -1,5 +1,0 @@
-Dear ${PERSON_NAME},
-You have secured the following marks in your mid-term exams:
-Math - ${MATH}
-English - ${ENG}
-Science - ${SCI}
