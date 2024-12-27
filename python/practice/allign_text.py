@@ -1,15 +1,16 @@
 import os
-
+t_w=os.get_terminal_size().columns
 # tput cols : to find out columns in the linux terminal
 # mode : to find out columns in the windows terminal
 # print(os.get_terminal_size())  : cross_platform compatibility 
 # print(os.get_terminal_size().columns)
+'''
 t_w=os.get_terminal_size().columns
 given_str=input("Enter your string: ")
 print(given_str.center(t_w).title())
 print(given_str.ljust(t_w).title())
 print(given_str.rjust(t_w).title())
-
+'''
 '''
 # alternate option for text alignment 
 import os
@@ -27,3 +28,12 @@ if __name__ == "__main__":
   text_to_center = input("Enter your string: ")
   center_text(text_to_center)
 '''
+
+
+given_str=input("Enter your string: ")
+print(given_str)
+user_cnf=input("do you want to allign text: yes or no ? ")
+if user_cnf=="yes":
+  print(given_str.center(t_w).title())
+  print(given_str.ljust(t_w).title())
+  print(given_str.rjust(t_w).title())
