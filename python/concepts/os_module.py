@@ -18,7 +18,7 @@ print(os.getpid())
 '''
 '''
 print(os.path.sep)
-path="/workspaces/Python_Automation/python/concepts"
+path="/workspaces/Python_Automation/python/concepts/test.py"
 path1="/workspaces/Python_Automation"
 path2="python/concepts/test.py"
 print(os.path.basename(path))
