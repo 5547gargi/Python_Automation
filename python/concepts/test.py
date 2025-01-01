@@ -3,7 +3,7 @@
 
 # import sys
 # print(sys.version)
-
+'''
 x=4
 print(x,type(x))
 y=str(x)
@@ -21,3 +21,4 @@ print(id(myone_list))
 
 print(ord('x'))
 print(chr(120))
+'''
