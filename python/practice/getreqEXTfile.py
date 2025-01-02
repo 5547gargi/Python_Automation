@@ -13,4 +13,8 @@ else:
         for each_file in allfiles_dir:
             if each_file.endswith(req_extension):
                 req_files.append(each_file)
-        print(req_files)
+        if len(req_files)==0:
+            print(f"There are no {req_extension} files in the locaton {req_path}")
+        else:
+            print(f"There are {len(req_files)} files in the location {req_path}")
+            print(req_files)
