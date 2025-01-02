@@ -22,3 +22,28 @@ print(id(myone_list))
 print(ord('x'))
 print(chr(120))
 '''
+'''
+my_string="working with loop"
+for each in my_string:
+    print(each)
+#print("\n".join(my_string))
+'''
+# my_list=[(1,4),(6,24),(12,96)]
+# for f,s in my_list:
+#     print(f,s)
+
+'''
+my_dict={'a':1,'b':2,'c':3}
+#for each in my_dict:
+# for each in my_dict.keys():
+# for each in my_dict.values():
+# for each in my_dict.items():
+    # print(each)
+for k,v in my_dict.items():
+    print(k,v)
+'''
+'''
+while True:
+    print("welcome to loops")
+    print("------------------")
+'''
