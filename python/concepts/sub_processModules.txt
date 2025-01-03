@@ -1,0 +1,16 @@
+import subprocess
+
+sp=subprocess.Popen(cmd,shell=True/False,stdOut=subprocess.PIPE,stderr=subprocess.PIPE,,universal_newlines=True)
+rc=sp.wait()
+outPut,error=sp.communicate()
+print(f"Output is : {outPut}")
+print(f"Error is : {error}")
+
+=========================================
+cmd='dir'      || 
+cmd='ls -lrt'  ||  {for 'cmd' arguments as string ; we have to set 'shell=True'; *AND if we need to acess any environment 
+                    varable values of the Operating System; *AND for windows operating system }
+shell=True     || 
+------------------------------------------
+cmd=['ls' '-lrt']  ||  {for 'cmd' arguments as list ; we have to set 'shell=False'}
+shell=False     || 
