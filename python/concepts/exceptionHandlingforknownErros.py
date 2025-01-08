@@ -21,5 +21,7 @@ except FileNotFoundError:
     print("No such file or diectory found")
 except Exception as e:
     print(e)
+else:
+    print("Tihis will execute if there is no exception")
 finally:
     print("This will execute after trying with try and except block")
