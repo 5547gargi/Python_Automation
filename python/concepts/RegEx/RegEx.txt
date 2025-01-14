@@ -1,0 +1,11 @@
+
+Rules to create a pattern :-
+----------------------------------
+a, x, 9 - Ordinary characters that match themselves
+[abc] Matches a or b or c
+[a-c] - Matches a or b or c
+[a-zA-Z0-9] -Matches any letter from (a to z) or (A to Z) or (e to 9)
+\w - Matches any single letter, digit or underscore
+\W - Matches any character not part of \w
+\d - Matches decimal digit 0-9
+. - Matches any single character except newline character
