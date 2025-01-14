@@ -9,3 +9,18 @@ a, x, 9 - Ordinary characters that match themselves
 \W - Matches any character not part of \w
 \d - Matches decimal digit 0-9
 . - Matches any single character except newline character
+------------------------------------------------------------------------
+
+^ - Start of the string (and start of the line in-case of multiline string)
+$ - End of the string (and newline character in-case of multiline string)
+\b - Empty string at the beginning or end of a word
+\B - Empty string not at the beginning or end of a word
+\t, \n, \r - Matches tab, newline, return respectively
+---------------------------------------------------------------------------
+
+{2}    exactly 2 times
+{2,4}  2, 3 or 4 times
+{2,}   two or more time
++      one or more
+*      O or more times
+?      once or none (lazy)
