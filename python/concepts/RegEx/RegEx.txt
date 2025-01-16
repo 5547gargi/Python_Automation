@@ -24,3 +24,20 @@ $ - End of the string (and newline character in-case of multiline string)
 +      one or more
 *      O or more times
 ?      once or none (lazy)
+----------------------------------------------------------------------------
+
+
+Simple Flags for regex:
+Abbreviation   Full name               Description
+ re.I          re.IGNORECASE        Makes the regular expression case-insensitive
+ re.L          re.LOCALE            The behaviour of some special sequences like \w, \W, \b,\s, \S will be made dependant on the current locale,
+                                    i.e. the user's language, country aso.
+re.M           re.MULTILINE         ^ and $ will match at the beginning and at the end of each line and not just at the beginning and the end of the string
+re.S           re.DOTALL            The dot "." will match every character plus the newline
+re.U           re.UNICODE           Makes \w, \W, \b, \B, \d, \D, \s, \S dependent on Unicode character properties
+re.X           re.VERBOSE           Allowing "verbose regular expressions", i.e. whitespace are ignored. This means that spaces, tabs, and 
+                                    carriage returns are not matched as such. 
+                                    If you want to match a space in a verbose regular expression, you'll need to escape it by escaping 
+                                    it with a backslash in front of it or include it in a character class. #are also ignored, except when 
+                                    in a character class or preceded by an non-escaped backslash. Everything following a "#" will be ignored 
+                                    until the end of the line, so this character can be used to start a comment.
