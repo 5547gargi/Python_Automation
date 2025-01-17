@@ -28,6 +28,7 @@ $ - End of the string (and newline character in-case of multiline string)
 
 
 Simple Flags for regex:
+--------------------------------
 Abbreviation   Full name               Description
  re.I          re.IGNORECASE        Makes the regular expression case-insensitive
  re.L          re.LOCALE            The behaviour of some special sequences like \w, \W, \b,\s, \S will be made dependant on the current locale,
