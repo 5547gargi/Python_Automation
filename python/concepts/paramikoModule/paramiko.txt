@@ -1,0 +1,11 @@
+Local Server         Remote Server
+------------         -------------
+windows              windows
+windows              linux
+linux                linux
+linux                windows
+======================================
+
+Local Server : Linux  and Remote Server : Linux
+------------------------------------------------
+
