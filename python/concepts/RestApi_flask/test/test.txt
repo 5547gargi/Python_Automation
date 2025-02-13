@@ -1,0 +1,24 @@
+employee_info ={
+              "Radha": {
+              "salary": "100k",
+              "Technology": "Linux Admin"
+              },
+              "emp2": {
+              "salary":"8k",
+              "Technology": "Web Developer",
+              }
+             }
+
+Designing REST APIs to get employees info and also to get a perticuar employee info.
+-------------------------------------------------------------------------------------
+Steps:
+   1. BaseUrl: http://hostname:port
+   2. Endpoints:
+         /esinfo
+         /einfo/<string:ename>
+   3. Resource: employee_info
+   4. HTTP Verbs : GET
+---------------------------------------------------------------------------------------
+
+*What is request object in flask module?
+=>The request object contains all the data that sent from the client to server.

@@ -1,0 +1,15 @@
+# Design REST API for an Employee Info ?
+
+Steps to implement REST API:
+   > Base URL?ROOT ENDpoint(where your REST API is running)
+                  > http://localhost:5000
+   > Endpoints:
+        > /info
+   > Resource:
+        > Employee Information
+   > HTTP Verbs/Methods:
+        > GET
+   > Now our REST APIs are:
+        > Base URL + Endpoints 
+              > http://localhost:5000/info
+                  and available method 'GET'.

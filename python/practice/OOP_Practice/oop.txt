@@ -1,0 +1,29 @@
+Oop_Principles :
+=================
+1.Encapsulation :-
+---------------------
+=> *Encapsulation refers to a mechanism of restricting the direct access 
+    to some of our attributes in a program.
+   *Restricting the ability to override the values of your objects within
+    your saddles, exactly what about Encapsulation.
+2.Abstraction :-
+--------------------
+=> Abstraction is the concept of Object Oriented Programming that only shows
+   the necessary attributes and hides unnecessary informations; from users who
+   are going to create some item objects.
+3.Inheritance :-
+-------------------
+=> Inheritance is a mechanism that allows users to reuse code across our classes.
+4.Polymerphism :-
+------------------
+=> Polymerphism refers to use of a single type entity to represent different types
+   in different scenarios. The idea of applying Polymerphism on our program is the 
+   ability to have different scenarios, when we call excat same entity or function.
+   for eg; name="jim" # str
+           print(len(name)) #3
+           my_list=["Radha","Krushna"]
+           print(len(my_list)) #2
+   *That's Polymerphism in Actions, A single function does now how to handle 
+    different kinds of objects as expected.
+
+ 

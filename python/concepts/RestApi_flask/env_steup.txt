@@ -1,0 +1,8 @@
+> Python flask REST API development needs :
+         > flask
+         > flask_restful frameworks
+
+> FLASK is a web framework. This means flask provides you with tools, libraries and technologies
+  that allows you to build a web application.
+> FLASK-RESTful is an extension for FLASK that adds support for quickly building REST APIs.
+> FLASK-Restful encourages best practices with minimal setup.

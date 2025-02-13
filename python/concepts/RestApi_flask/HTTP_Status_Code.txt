@@ -1,0 +1,147 @@
+=> HTTP status code represnts the status of a request on REST APIs.
+ 
+ eg:  curl -i -X GET https://api.github.com/users/gargi17692 (getting response body with header)
+  HTTP/2 200 
+date: Sun, 26 Jan 2025 18:54:01 GMT
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=60, s-maxage=60
+vary: Accept,Accept-Encoding, Accept, X-Requested-With
+etag: W/"ee0cc704ac9d6d53add4c3f240ddf0355390591187cbe07dbc19506d417a367d"
+last-modified: Tue, 26 Nov 2024 20:22:10 GMT
+x-github-media-type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+server: github.com
+accept-ranges: bytes
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 14
+x-ratelimit-reset: 1737917685
+x-ratelimit-resource: core
+x-ratelimit-used: 46
+x-github-request-id: 4E10:0A28:C058B:F148C:679684C9
+
+{
+  "login": "gargi17692",
+  "id": 160726145,
+  "node_id": "U_kgDOCZR8gQ",
+  "avatar_url": "https://avatars.githubusercontent.com/u/160726145?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/gargi17692",
+  "html_url": "https://github.com/gargi17692",
+  "followers_url": "https://api.github.com/users/gargi17692/followers",
+  "following_url": "https://api.github.com/users/gargi17692/following{/other_user}",
+  "gists_url": "https://api.github.com/users/gargi17692/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/gargi17692/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/gargi17692/subscriptions",
+  "organizations_url": "https://api.github.com/users/gargi17692/orgs",
+  "repos_url": "https://api.github.com/users/gargi17692/repos",
+  "events_url": "https://api.github.com/users/gargi17692/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/gargi17692/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 3,
+  "public_gists": 0,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2024-02-21T09:50:28Z",
+  "updated_at": "2024-11-26T20:22:10Z"
+}
+
+=> We can get the HTTP Status code from the header of a response.
+=> The Status-Code is a 3-digit integer where the first digit of the Status-Code defines
+   class of response and last two donot hve any categorization role.
+1xx Informational
+ 100 Continue
+ 101 Switching Protocols 
+ 102 Processing (WebDAV)
+
+2xx Success
+ 200 OK
+ 201 Created
+ 202 Accepted
+ 203 Non-Authoritative Information
+ 204 No Content
+ 205 Reset Content
+ 206 Partial Content
+ 207 Multi-Status (WebDAV)
+ 208 Already Reported (WebDAV)
+ 226 IM Used
+
+3xx Redirection
+ 300 Multiple Choices
+ 301 Moved Permanently
+ 302 Found
+ 303 See Other
+ 304 Not Modified
+ 305 Use Proxy
+ 306 (Unused)
+ 307 Temporary Redirect
+ 308 Permanent Redirect (experimental)
+
+4xx Client Error
+ 400 Bad Request
+ 401 Unauthorized
+ 402 Payment Required
+ 403 Forbidden
+ 404 Not Found
+ 405 Method Not Allowed
+ 406 Not Acceptable
+ 407 Proxy Authentication Required
+ 408 Request Timeout
+ 409 Conflict
+ 410 Gone
+ 411 Length Required
+ 412 Precondition Failed
+ 413 Request Entity Too Large
+ 414 Request-URI Too Long
+ 415 Unsupported Media Type
+ 416 Requested Range Not Satisfiable
+ 417 Expectation Failed
+ 418 I'm a teapot (RFC 2324)
+ 420 Enhance Your Calm (Twitter)
+ 422 Unprocessable Entity (WebDAV)
+ 423 Locked (WebDAV)
+ 424 Failed Dependency (WebDAV)
+ 425 Reserved for WebDAV
+ 426 Upgrade Required
+ 428 Precondition Required
+ 429 Too Many Requests
+ 431 Request Header Fields Too Large
+ 444 No Response (Nginx)
+ 449 Retry With (Microsoft)
+ 450 Blocked by Windows Parental Controls (Microsoft)
+ 451 Unavailable For Legal Reasons
+ 499 Client Closed Request (Nginx)
+
+5xx Server Error
+ 500 Internal Server Error
+ 501 Not Implemented
+ 502 Bad Gateway
+ 503 Service Unavailable
+ 504 Gateway Timeout
+ 505 HTTP Version Not Supported
+ 506 Variant Also Negotiates (Experimental)
+ 507 Insufficient Storage (WebDAV)
+ 508 Loop Detected (WebDAV)
+ 509 Bandwidth Limit Exceeded (Apache)
+ 510 Not Extended
+ 511 Network Authentication Required
+ 598 Network read timeout error
+ 599 Network connect timeout error   
+

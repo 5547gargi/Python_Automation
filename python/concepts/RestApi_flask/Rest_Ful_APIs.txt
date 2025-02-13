@@ -1,0 +1,40 @@
+=> A RESTful API is an Application Progarm Interface.
+   RESTful APIs are used to provide communication between two parties over a network.
+   RESTful APIs are developed using REST rules.
+   REST are set of rules to develop modern web applications to send and receive data over the network.
+   *REST API is a web application and has it's own url.
+   *Note: REST APIs are not used to serve any web applications, instead  of that they are used as an Interface
+   between two parties to provide communication between then over the network with its url.
+
+*REST - (Representational State Tranfer)
+-----------------------------------------
+=>Example: Github REST API(or) Github RESTful API
+           > curl https://api.github.com/users/AutomationWithScripting/repos
+             we will get repo list form the account as a json data.
+           > Client: The client is a person or software who uses the API.
+                Here: curl/browser/Progarm/script/any application
+           > Resource: A resource can be any object that API can provide information about.
+                Here: Github account repos
+
+*REST means when a RESTful API is called, the server will transfer the representation of the
+ state of the requested resource to client.
+
+*Basic Concept of REST APIs
+-----------------------------
+url : https://dummy.restapiexample.com/api/v1/employees
+      https://dummy.restapiexample.com/api/v1/employee/1 
+=> Concepts : > Base url or Root Endpoint: https://dummy.restapiexample.com
+              > Endpoints/Routs : api/v1/employees
+                                  api/v1/employee/1
+              > Resource : A data in web Application.
+                           Endpoints are useful to work with Resource(s).
+              > HTTP Verbs/Methods/Operations : We have to execute different methods on Endpoints
+                                                based on requirment. Those Methods/Operations are
+                                                called HTTP Verbs.
+                                                > Different HTTP Verbs are :GET,POST,PUT,PATCH,DELETE etc.
+                                                > GET is used to get existing data from web application.
+                                                > POST is used to send data to web application.
+                                                > PUT is used to update existing information.
+                                                > PATCH is to update partially the info(not entire info).
+                                                > DELETE is to delete resource from web application.
+=> So REST API url is BASE URL + Endpoint

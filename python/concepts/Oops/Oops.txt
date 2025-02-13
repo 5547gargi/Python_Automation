@@ -1,0 +1,44 @@
+*What is Oops ?
+=> It is about: Class, Object, Inheritance, Polymorphism, Data Abstracton and Data Encapsulation.
+
+*What is an Object?
+=> Object could be anything which exists in real-time, like human, fan, car, email, any application, jenkins,
+   weblogic, tomcat, apache etc..
+=> Each objects has characteristics and functions 
+   eg: human/person:
+             => Characteristics: name, age, height
+             => Functions: walking, talking, running
+
+*Why Oop's ?
+ => To group related Functions(methods).
+ => To create a template/blueprint.
+
+|-------------------------------------------------------------------------------------------------------------------------|
+|*Oop's is a concept where characteristics and functions of a real-life object is packeged as a single entity in the code.|
+|-------------------------------------------------------------------------------------------------------------------------|
+
+*What is Class?
+=> Class is a template/blueprint to create an object.
+   Class is a combination of attributes and methods.
+   We can define Attributes(variables) and methods.
+
+*What is Constructor?
+=> A Constructor is a special method that is called by default whenever you create an object from a Class.
+
+ *What is Destructor?
+ => Destructors are called when an object gets destroyed.
+    In Python, destructors are not needed as much nedded in C++, because Python has a garbage collector
+    that handles memory management automatically.
+    The __del__() method is known as a destructor  method in Python.
+    It is called when all references to the object have been deleted.
+
+*What is Polymorphism?
+=> Polymorphism allows us to define same methods in different Classes.
+   *This process is also known as Method Overriding.
+
+*What is Inheritance?
+=> Inheritance is a mechanism that allows us to create a new class known as child class; that is besed on parent class.
+
+*What is Encapsulation?
+=> Using Encapsulation we can restrict access to methods and variables.
+   This prevent data from direct modification which is called Encapsulation.
