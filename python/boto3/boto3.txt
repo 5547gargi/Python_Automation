@@ -1,0 +1,21 @@
+Programatic Accesskey for root account :- Your accesskey_Id and secret_acccess_key_Id 
+
+Programatic Accesskey for user account :- got to iam console and go to user and create your user with necessary
+                                          permission and choose "Acces type" as "Programatic access" ; attach
+                                          policies to your user (like "AmazonS3FullAccess") to the user.
+                                          Now by going to each user account create accesskey_Id and secret_acccess_key_Id .
+
+Boto3 Environment setup for Windows_server:-
+> Configure credentials of your AWS account on windows server using aws cli command.
+     > install awscli
+         > pip3 install awscli
+     > Configure root/IAM user accesskey_Id/credentials using:-
+          > aws configure --profie root (here root is the profile name, u can give same name as root or IAM user name as per choice) 
+          > aws configure --profie dev_user
+     > whie installing awscli in our home directory '.aws' will be created.
+          > cd .aws
+          > type config (here under default region and output will be sotred)
+          > type credentials (here accesskey_Id and secret_acccess_key_Id will be stored)
+
+
+                                                               
