@@ -10,12 +10,17 @@ Boto3 Environment setup for Windows_server:-
      > install awscli
          > pip3 install awscli
      > Configure root/IAM user accesskey_Id/credentials using:-
-          > aws configure --profie root (here root is the profile name, u can give same name as root or IAM user name as per choice) 
-          > aws configure --profie dev_user
+           > aws configure --profie root (here root is the profile name, u can give same name as root or IAM user name as per choice) 
+           > aws configure --profie dev_user
      > whie installing awscli in our home directory '.aws' will be created.
-          > cd .aws
-          > type config (here under default region and output will be sotred)
-          > type credentials (here accesskey_Id and secret_acccess_key_Id will be stored)
+           > cd .aws
+           > type config (here under default region and output will be sotred)
+           > type credentials (here accesskey_Id and secret_acccess_key_Id will be stored)
+     
+     > Now for indivisual user :-
+           > aws configure --profile root
+           > aws configure --profile dev_user
+           > aws configure --profile prod_user
 
 
                                                                
