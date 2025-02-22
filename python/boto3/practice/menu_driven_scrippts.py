@@ -5,6 +5,7 @@ ec2_con_re = aws_mag_con.resource(service_name="ec2", region_name="us-east-1")
 ec2_con_cli = aws_mag_con.client(service_name="ec2", region_name="us-east-1")
 
 '''
+# using resource
 while True:
     print("This script performs the following actions on ec2 instance")
     print("""
