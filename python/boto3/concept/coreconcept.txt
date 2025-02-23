@@ -25,4 +25,9 @@ The core Concepts of boto3 are:-
 > Waiters :
    > A way to block until a certain state has been reached for any required aws serice.
    
+> Meta :
+   > Boto3 meta object is useful to enter into client object from resource object.
+
+> Collections :
+   > Boto3 Collections are useful to collect group of resources informations.   
   
