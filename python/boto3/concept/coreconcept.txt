@@ -1,23 +1,28 @@
 The core Concepts of boto3 are:- 
-        > Session
-        > Resource
-        > Client
-        > Meta
-        > Collections
-        > Waiters
-        > Paginators
+  > Session
+  > Resource
+  > Client
+  > Meta
+  > Collections
+  > Waiters
+  > Paginators
 
 > Session:
-     > It is an AWS Management console in our terms
-     > Session stores configuration informations(primarily credentials)
-     > Allows users to create Service_Clients and Resources.
-     > Also boto3 creates a default session for us when needed.
+  > It is an AWS Management console in our terms
+  > Session stores configuration informations(primarily credentials)
+  > Allows users to create Service_Clients and Resources.
+  > Also boto3 creates a default session for us when needed.
 
 > Resource and Client:
-      > We can create particular AWS Service Console like iam console, ec2 console, sns console... etc. by using
-        session_objects.
-        eg: iam_con=aws_mang_con_root.resource(service_name='iam',region='us-east-1')
-            iam_con=aws_mang_con_root.client(service_name='iam',region='us-east-1')
-      > Resource is a high-level objet-oriented service access and it is available for some of the aws services.
-        (o/p can be performed by using '.' operations)
-      > Client is a low-level service access.(o/p is directory)      
+  > We can create particular AWS Service Console like iam console, ec2 console, sns console... etc. by using
+  session_objects.
+    eg: iam_con=aws_mang_con_root.resource(service_name='iam',region='us-east-1')
+        iam_con=aws_mang_con_root.client(service_name='iam',region='us-east-1')
+    > Resource is a high-level objet-oriented service access and it is available for some of the aws services.
+       (o/p can be performed by using '.' operations)
+    > Client is a low-level service access.(o/p is directory)
+
+> Waiters :
+   > A way to block until a certain state has been reached for any required aws serice.
+   
+  
