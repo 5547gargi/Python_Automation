@@ -1,6 +1,6 @@
 from random import choice
 
-len_of_password=8
+len_of_password=12
 valid_chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
 
 #print (choice(valid_chars))
