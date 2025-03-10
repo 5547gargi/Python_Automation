@@ -1,11 +1,4 @@
 #Automated EBS Snapshots using AWS Lambda and CloudWatch
-'''
-Steps:-
- > Write a code to list all EBS Volumes Based on requirements 
- 
-
- 
-'''
 import boto3
 from pprint import pprint
 
@@ -44,21 +37,6 @@ pprint("The snapshot ids are : {}".format(snapshotIds))
 waiter = ec2_cli.get_waiter('snapshot_completed')
 waiter.wait(SnapshotIds=snapshotIds)
 print("Successfully completed snaps for the volumes of {}".format(list_of_volids))   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 '''
