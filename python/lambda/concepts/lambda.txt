@@ -26,3 +26,9 @@ How AWS Lambda Function executes the code for AWS services?
 ===========================================================
  > By Using Programmatic Access Keys
  > Or by creating AWS IAM Role and attaching the role to AWS Lambda.
+
+Why do we need to copy EBS snapshot from one AWS region to another region?
+ > Geographic Expansion:- If we want to launch our application in a new region
+ > Migration:-  If we want to migrate our application from one region to another region
+ > Disaster Recovery:- If we want to backup ouer data and log file accross different Geographical
+                       locations at regular interval to minimize data loss and recovery time. 
