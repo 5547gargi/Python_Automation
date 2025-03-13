@@ -20,7 +20,4 @@ Boto3 Environment setup for Windows_server:-
      > Now for indivisual user :-
            > aws configure --profile root
            > aws configure --profile dev_user
-           > aws configure --profile prod_user
-
-
-                                                               
+           > aws configure --profile prod_user                                                           
