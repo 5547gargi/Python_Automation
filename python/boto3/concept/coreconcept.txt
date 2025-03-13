@@ -7,15 +7,16 @@ The core Concepts of boto3 are:-
     > Waiters
     > Paginators
 
-> Session:
+> Session (custom session, default session) :
     > It is an AWS Management console in our terms
     > Session stores configuration informations(primarily credentials)
     > Allows users to create Service_Clients and Resources.
     > Also boto3 creates a default session for us when needed.
 
-> Resource and Client:
+> Resource and Client :
   > We can create particular AWS Service Console like iam console, ec2 console, sns console... etc. by using
-  session_objects.
+    session_objects.
+    
     eg: iam_con=aws_mang_con_root.resource(service_name='iam',region='us-east-1')
         iam_con=aws_mang_con_root.client(service_name='iam',region='us-east-1')
     > Resource is a high-level objet-oriented service access and it is available for some of the aws services.
@@ -28,10 +29,10 @@ The core Concepts of boto3 are:-
 > Meta :
     > Boto3 meta object is useful to enter into client object from resource object.
 
-> Collections :
+> Collections (filters) :
     > Boto3 Collections are useful to collect group of resources informations   
   
-> Paginators:-
+> Paginators:
     > paginators plays a role when we use boto3 to query AWS resources
     > Like get all ec2_instances, iam users, buckets, objects etc..
     > For query, API calls made to AWS through boto3
