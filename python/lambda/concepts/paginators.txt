@@ -1,0 +1,11 @@
+Paginators:-
+------------
+ > paginators plays a role when we use boto3 to query AWS resources
+ > Like get all ec2_instances, iam users, buckets, objects etc..
+ > For query, API calls made to AWS through boto3
+ > Generally each API class return 50 to 100 results.
+     > Note: S3 returns upto 1000 results.
+ > Actually each API call returns a page and each page holds from 50 to 100 results.
+ > If you are trying retrive more than one page of results then you need to use paginator to issue
+   multiple API requests on your behalf.
+ > Boto3 provides Paginators to automatically issue multiple API requests to retrive all the pages.     
