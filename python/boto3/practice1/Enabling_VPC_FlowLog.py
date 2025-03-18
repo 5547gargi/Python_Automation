@@ -11,6 +11,23 @@
       2 123456789010 eni-1235b8ca123456789 172.31.9.69 172.31.9.12 49761 3389 6 20 4249 1418530010 1418530070 REJECT OK
 '''
 import boto3
+from botocore.exceptions import ClientError
 
-ec2=boto3.client('ec2')
-respons
+ec2_client=boto3.client('ec2')
+log_client=boto3.client('logs')
+for vpc in ec2_client.describe_vpc()['Vpcs']:
+       print(vpc['VpcId'])
+       vpc_id=vpc['VpcId']
+
+       log_group=vpc_id + "-flowlog" # vpc-dfag0ab9-flowlog
+       try:
+             response_create_log_group=log_client.create_log_group(logGroupName=log_group)
+       except ClientError:
+             print("Log group is already created for the follwing vpc",vpc_id)
+       filter_flowlog={'Name':'resource-id','Values':[vpc_id]}
+       responce_describe_flowlog=ec2_client.describe_flow_logs(Filters=[filter_flowlog])
+       if len(responce_describe_flowlog['FlowLogs'])>0:
+             print("Flow log is already enabled for the following vpc", vpc_id)
+       else:
+             response_create_flowlog=ec2_client.create_flow_logs(ResourceIds=[vpc_id],ResourceType='VPC',TrafficType='ALL',LogGroupName=log_group,DeliverLogsPermissionArn="arn:aws:iam:892515485494:role/flowlogrole")
+             print("Flow log  is enabled for the following vpc", vpc_id)                        
