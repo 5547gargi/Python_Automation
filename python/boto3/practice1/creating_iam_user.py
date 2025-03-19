@@ -52,9 +52,19 @@ if __name__ == '__main__':
       parser.add_argument('--userName',type=str,help='The name of IAM user, owner wants to create')
       parser.add_argument('--password', type=str, help='The password of IAM user(default is to generate from random_password_generator)')
       parser.add_argument('--attach_policy', type=str, help='Attach an IAM policy to the user')
+      parser.add_argument('--filename', type=str, help="Filename that contain IAM user, seperated by line")
+
       args=parser.parse_args()
+      # If no argumnent is provided, print help and exit
       if not any(vars(args).values()):
          parser.print_help()
          sys.exit(1)
          
-      create_iam_user(args.userName, password=args.password, attach_policy=args.attach_policy)
+      # for creating multiple iam user from a file
+      if args.filename:
+         with open(args.filename, 'r') as file:
+             usernames = file.read().splitlines()
+         for username in usernames: 
+             create_iam_user(username, password=args.password, attach_policy=args.attach_policy)
+      else:
+         create_iam_user(args.username, password=args.password, attach_policy=args.attach_policy)   
